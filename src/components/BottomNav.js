@@ -10,6 +10,9 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import HomeScreen from '../screens/HomeScreen';
 import HistoryScreen from '../screens/HistoryScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import CaretakerScreen from '../screens/CaretakerScreen';
+import ChildrenScreen from '../screens/ChildrenScreen';
+import AddChildScreen from '../screens/AddChildScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -47,7 +50,7 @@ const BottomNav = () => {
             />
             <Tab.Screen
                 name='Settings'
-                component={SettingsScreen}
+                component={AddChildScreen}
                 options={{
                     tabBarLabel: 'Settings',
                     tabBarIcon: ({ color, size }) => <Icon name='cog' color={color} size={size} />,
